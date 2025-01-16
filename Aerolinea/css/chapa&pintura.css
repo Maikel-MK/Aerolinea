@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-image: url("../img/roma-kaiuk-AXZntyEGBg0-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    color: #fffc47d3;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9); 
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input:hover, select:hover {
+    border-color: #007bff; 
+}
+
+input:focus, select:focus {
+    border-color: #007bff; 
+    outline: none; 
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+#resultado {
+    display: none; 
+    margin-top: 20px; 
+    padding: 10px; 
+    border: 1px solid #007bff; 
+    border-radius: 5px; 
+    background-image: url("../img/paper-texture.jpg"); 
+    opacity: 0.9;
+    text-align: center; 
+    width: max-content; 
+    justify-self: center; 
+ 
+}
+
+#notificacion {
+   margin-top: 15px; 
+   padding: 10px; 
+   display: none; 
+   border-radius: 5px; 
+   text-align: center; 
+   width: max-content; 
+   justify-self: center; 
+   margin-bottom: 1rem;
+   background-color: #ccc;
+   opacity: 0.9;
+}
+
+#error.error {
+   border-color: red;
+   color: red;
+   background-color: rgba(255,0,0,0.1);
+}
+
+#error.success {
+   border-color: green;
+   color: green;
+   background-color: rgba(0,255,0,0.1);
+}

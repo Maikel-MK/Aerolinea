@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Aerolinea MM</title>
+    <link rel="stylesheet" href="css/chapa&pintura.css">
+    <link rel="shortcut icon" href="img/plane-ticket.png" type="image/x-icon"> 
+</head>
+<body>
+    <h1>Reserva Tu Vuelo</h1>
+
+    <div id="notificacion"></div>
+
+    <form id="form-vuelo">
+        <label for="fecha-salida">Fecha de Salida:</label>
+        <input type="date" name="fecha-salida" id="fecha-salida" required>
+
+        <label for="fecha-regreso">Fecha de Regreso:</label>
+        <input type="date" name="fecha-regreso" id="fecha-regreso" required>
+
+        <label for="destino">Destino:</label>
+        <select name="destino" id="destino" required>
+            <option value="" disabled selected>Selecciona un destino</option>
+            <option value="Nueva York">Nueva York</option>
+            <option value="Los Ángeles">Los Ángeles</option>
+            <option value="Londres">Londres</option>
+            <option value="Madrid">Madrid</option>
+            <option value="Tokio">Tokio</option>
+        </select>
+
+        <label for="pasajeros">Cantidad de Pasajeros:</label>
+        <input type="number" name="pasajeros" id="pasajeros" min="1" max="10" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" required>
+
+        <label for="telefono">Número de Teléfono:</label>
+        <input type="tel" name="telefono" id="telefono" placeholder="xxxx-xxxxxxx" required>
+
+        <button type="submit">Buscar Vuelos</button> 
+    </form>
+
+
+    <div id="resultado"></div>
+
+</body>
+</html>
+<script src="js/aerolinea.js"></script>
+</body>
+</html>
